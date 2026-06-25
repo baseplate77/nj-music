@@ -23,7 +23,6 @@ A YouTube Music client that runs **entirely in the Flutter app** — no server.
 ## Run
 
 ```bash
-cd frontend
 flutter pub get
 flutter run        # macOS / iOS sim / Android — no API base URL needed anymore
 ```
@@ -77,7 +76,7 @@ Note: on iOS the notification's *total time* may read 2× due to the AVPlayer
 AAC duration quirk (see below); the in-app UI corrects for it, and Android
 (ExoPlayer) reports correctly.
 
-## Key files (`frontend/lib/`)
+## Key files (`lib/`)
 
 | File | Role |
 |------|------|
@@ -89,7 +88,6 @@ AAC duration quirk (see below); the in-app UI corrects for it, and Android
 ## Verify the data pipeline (live network)
 
 ```bash
-cd frontend
 flutter test test/music_service_smoke_test.dart
 ```
 
